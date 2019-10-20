@@ -48,7 +48,8 @@ echo Question1
 echo %q1%
 set /p q1q1=
 
-if %q1q1% == %quiz1ans% goto q1fin else goto q1fal
+if %q1q1% == %quiz1ans% goto q1fin
+if not %q1q1% == %quiz1ans% goto q1fal
 
 :quiz2pg1
 cls
@@ -56,7 +57,8 @@ echo Question1
 echo %q2%
 set /p q2q1=
 
-if %q2q1% == %quiz2ans% goto q2fin else goto q2fal
+if %q2q1% == %quiz2ans% goto q2fin
+if not %q2q1% == %quiz2ans% goto q2fal
 
 :quiz3pg1
 cls
@@ -64,7 +66,8 @@ echo Question1
 echo %q2%
 set /p q2q1=
 
-if %q3q1% == %quiz3ans% goto q3fin else goto q3fal
+if %q3q1% == %quiz3ans% goto q3fin
+if not %q3q1% == %quiz3ans% goto q3fal
 
 :q1fin
 cls
